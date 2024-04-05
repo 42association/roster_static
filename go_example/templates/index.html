@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task List</title>
+</head>
+<body>
+    <h1>Tasks for {{ .date }}</h1>
+    <h2>Have To Do</h2>
+    <ul>
+        {{ range .haveto }}
+        <li>{{ . }}</li>
+        {{ end }}
+    </ul>
+
+    <h2>Did</h2>
+    <ul>
+        {{ range .did }}
+        <li>{{ . }}</li>
+        {{ end }}
+    </ul>
+</body>
+</html>
