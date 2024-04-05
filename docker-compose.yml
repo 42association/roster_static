@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "8040:8040"
+    volumes:
+      - ./go_example/templates:/root/templates

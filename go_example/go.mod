@@ -1,6 +1,6 @@
 module example.com/myginapp
 
-go 1.22.1
+go 1.18
 
 require (
 	github.com/bytedance/sonic v1.11.3 // indirect
