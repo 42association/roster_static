@@ -25,6 +25,7 @@ WORKDIR /root/
 # ビルドステージで作成したバイナリをコピー
 COPY --from=builder /app/main .
 COPY go_example/templates ./templates
+COPY go_example/css ./css
 
 # ポート8040を開放
 EXPOSE 8040
