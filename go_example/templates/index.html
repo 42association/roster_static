@@ -9,44 +9,44 @@
 </head>
 <body>
 <main class="wrap">
-    <header class="mainHeader">
+    <header class="mainHeader mainHeader-index">
         <h1 class="mainHeader_title unitDate">
             <span class="unitDate_month">{{ .month }}</span>
             <span class="unitDate_slash">/</span>
             <span class="unitDate_day">{{ .day }}</span>
         </h1>
-        <nav class="navPrevNext">
-            <ol class="listPrevNext">
-                <li class="listPrevNext_item listPrevNext_item-prev"><a href="#">&lt;</a></li>
-                <li class="listPrevNext_item listPrevNext_item-next"><a href="#">&gt;</a></li>
-            </ol>
-        </nav>
         <nav class="navGlobal">
             <ul class="listNavGlobal">
                 <li class="listNavGlobal_item"><a href="/">Today</a></li>
                 <li class="listNavGlobal_item"><a href="list_did.html">[list]Did</a></li>
                 <li class="listNavGlobal_item"><a href="list_have_to.html">[list]Have To Do</a></li>
             </ul>
-            <div class="formCalendar">
-                <label for="calendar">date:</label>
-                <input type="date" id="calendar" name="trip-start" value="2024-04-16" min="2024-04-01" max="2024-06-01" />
-            </div>
+        </nav>
+        <nav class="navPrevNext">
+            <ol class="listPrevNext">
+                <li class="listPrevNext_item listPrevNext_item-prev"><a href="#">&lt;</a></li>
+                <li class="listPrevNext_item listPrevNext_item-next"><a href="#">&gt;</a></li>
+            </ol>
         </nav>
     </header>
-    <section class="mainContainer">
-        <h2>Did</h2>
-        <ul class="listMember">
-            {{ range .did }}
-            <li class="listMember_item">{{ . }}</li>
-            {{ end }}
-        </ul>
-        <h2>Have To Do</h2>
-        <ul class="listMember">
-            {{ range .haveto }}
-            <li class="listMember_item">{{ . }}</li>
-            {{ end }}
-        </ul>
-    </section>
+    <div class="mainContainer">
+        <section class="secListMember secListMember-did">
+            <h2 class="secListMember_title">Did</h2>
+            <ul class="secListMember_list listMember">
+                {{ range .did }}
+                <li class="listMember_item">{{ . }}</li>
+                {{ end }}
+            </ul>
+        </section>
+        <section class="secListMember secListMember-haveto">
+            <h2 class="secListMember_title">Have To Do</h2>
+            <ul class="secListMember_list listMember">
+                {{ range .haveto }}
+                <li class="listMember_item">{{ . }}</li>
+                {{ end }}
+            </ul>
+        </section>
+    </div>
 </main>
 </body>
 </html>
