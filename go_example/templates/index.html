@@ -1,22 +1,54 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Task List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Tasks for {{ .month }}/{{ .day }}</title>
 </head>
 <body>
-    <h1>Tasks for {{ .date }}</h1>
-    <h2>Have To Do</h2>
-    <ul>
-        {{ range .haveto }}
-        <li>{{ . }}</li>
-        {{ end }}
-    </ul>
-
-    <h2>Did</h2>
-    <ul>
-        {{ range .did }}
-        <li>{{ . }}</li>
-        {{ end }}
-    </ul>
+<main class="wrap">
+    <header class="mainHeader">
+        <h1 class="mainHeader_title unitDate">
+            <span class="unitDate_month">{{ .month }}</span>
+            <span class="unitDate_slash">/</span>
+            <span class="unitDate_day">{{ .day }}</span>
+        </h1>
+        <nav class="navPrevNext">
+            <ol class="listPrevNext">
+                <li class="listPrevNext_item listPrevNext_item-prev"><a href="#">&lt;</a></li>
+                <li class="listPrevNext_item listPrevNext_item-next"><a href="#">&gt;</a></li>
+            </ol>
+        </nav>
+        <nav class="navGlobal">
+            <ul class="listNavGlobal">
+                <li class="listNavGlobal_item"><a href="/">Today</a></li>
+                <li class="listNavGlobal_item"><a href="list_did.html">[list]Did</a></li>
+                <li class="listNavGlobal_item"><a href="list_have_to.html">[list]Have To Do</a></li>
+            </ul>
+            <div class="formCalendar">
+                <label for="calendar">date:</label>
+                <input type="date" id="calendar" name="trip-start" value="2024-04-16" min="2024-04-01" max="2024-06-01" />
+            </div>
+        </nav>
+    </header>
+    <section class="mainContainer">
+        <h2>Did</h2>
+        <ul class="listMember">
+            {{ range .did }}
+            <li class="listMember_item">{{ . }}</li>
+            {{ end }}
+        </ul>
+        <h2>Have To Do</h2>
+        <ul class="listMember">
+            {{ range .haveto }}
+            <li class="listMember_item">{{ . }}</li>
+            {{ end }}
+        </ul>
+    </section>
+</main>
 </body>
 </html>
