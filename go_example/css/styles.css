@@ -15,6 +15,7 @@ ul, ol {
   --bg-color2-alpha: rgba(51,51,51,0.7);
   --content-color1: #01BABC;
   --color-white: #FFFFFF;
+  --heightNavGlobalSp: 84px;
 
   font-size: 62.5%; /* 1rem = 10px */
   font-family: "futura-pt", sans-serif;
@@ -44,12 +45,15 @@ a {
 /* -----
  mainHeader
 ----- */
-.mainHeader {
-
+.mainHeader:not(.mainHeader-index) {
+  padding: 30px 0 20px;
 }
 
-.mainHeader_title {
-  color: var(--color-white);
+.mainHeader:not(.mainHeader-index) .mainHeader_title {
+  margin-bottom: 0.5em;
+  color: var(--content-color1);
+  font-size: 2.8rem;
+  text-align: center;
 }
 
 /* navPrevNext */
@@ -127,21 +131,27 @@ a {
 
 .listNavGlobal_item a {
   display: block;
-  height: 84px;
-  line-height: 84px;
+  height: var(--heightNavGlobalSp);
+  line-height: var(--heightNavGlobalSp);
   padding: 0 1em;
   text-decoration: none;
 }
 
-/* formCalendar */
+/* navDateSelector */
+.navDateSelector {
+  margin: 0 20px;
+  text-align: right;
+  color: var(--color-white);
+}
+
 .formCalendar {
-  border-left: 1px solid var(--color-white);
 }
 
 /* -----
  mainContainer
 ----- */
 .mainContainer {
+  padding-bottom: var(--heightNavGlobalSp);
   text-align: center;
 }
 
@@ -232,3 +242,45 @@ a {
   font-size: 2.4rem;
 }
 
+/* -----
+ [page]did, have_to
+----- */
+.secListData {
+  display: flex;
+  border-bottom: 1px solid var(--content-color1);
+}
+.secListData:first-child {
+  border-top: 1px solid var(--content-color1);
+}
+
+.secListData_date {
+  width: 5.6em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: -1px;
+  background-color: var(--content-color1);
+  font-size: 1.4rem;
+  color: var(--bg-color1);
+  border-bottom: 1px solid var(--bg-color1);
+}
+
+.secListData_date-sat {
+  background-color: #86c5ff;
+}
+
+.secListData_date-holiday {
+  background-color: #dd9ee5;
+}
+
+.secListData_date .week {
+  display: block;
+}
+
+.secListData .listMember {
+  align-content: center;
+  margin: 0 0.5em 0 2em;
+  padding: 0.5em 0;
+  color: var(--color-white);
+}

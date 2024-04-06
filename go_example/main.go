@@ -29,7 +29,7 @@ func main() {
         })
     })
     router.GET("/list_have_to.html", func(c *gin.Context) {
-        c.HTML(200, "list_did.html", gin.H{
+        c.HTML(200, "list_have_to.html", gin.H{
             "haveto":    []string{"Stanley", "Phyllis", "Andy", "Robert", "Ryan", "Kelly", "Toby"},
         })
     })
