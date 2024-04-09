@@ -334,6 +334,7 @@ a {
 .secListData {
   display: flex;
   border-bottom: 1px solid var(--content-color1);
+  border-right: 1px solid var(--content-color1);
 }
 .secListData:first-child {
   border-top: 1px solid var(--content-color1);
