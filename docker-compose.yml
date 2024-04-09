@@ -7,3 +7,4 @@ services:
     volumes:
       - ./go_example/templates:/root/templates
       - ./go_example/css:/root/css
+      - ./go_example/js:/root/js

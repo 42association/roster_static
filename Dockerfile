@@ -26,6 +26,7 @@ WORKDIR /root/
 COPY --from=builder /app/main .
 COPY go_example/templates ./templates
 COPY go_example/css ./css
+COPY go_example/js ./js
 
 # ポート8040を開放
 EXPOSE 8040

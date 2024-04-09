@@ -9,7 +9,7 @@
 </head>
 <body>
 <main class="wrap">
-    <header class="mainHeader">
+    <header class="mainHeader mainHeader-list">
         <h1 class="mainHeader_title">[list]Have To Do</h1>
         <nav class="navGlobal">
             <ul class="listNavGlobal">
@@ -20,13 +20,13 @@
         </nav>
         <nav class="navDateSelector">
             <div class="formCalendar">
-                <label for="calendar2">jump:</label>
-                <input type="date" id="calendar2" name="trip-start" value="2024-04-15" min="2024-04-01" max="2024-06-30" />
+                <label for="datePicker">jump:</label>
+                <input type="date" id="datePicker" name="trip-start" value="2024-04-15" min="2024-04-01" max="2024-06-30" />
             </div>
         </nav>
     </header>
     <div class="mainContainer">
-        <section id="anc20240415" class="secListData">
+        <section id="anc2024-04-15" class="secListData">
             <h2 class="secListData_date">04/15<span class="week">(mon)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -34,7 +34,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240416" class="secListData">
+        <section id="anc2024-04-16" class="secListData">
             <h2 class="secListData_date">04/16<span class="week">(tue)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -42,7 +42,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240417" class="secListData">
+        <section id="anc2024-04-17" class="secListData">
             <h2 class="secListData_date">04/17<span class="week">(wed)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -50,7 +50,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240418" class="secListData">
+        <section id="anc2024-04-18" class="secListData">
             <h2 class="secListData_date">04/18<span class="week">(thu)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -58,7 +58,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240419" class="secListData">
+        <section id="anc2024-04-19" class="secListData">
             <h2 class="secListData_date">04/19<span class="week">(fri)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -66,7 +66,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240420" class="secListData">
+        <section id="anc2024-04-20" class="secListData">
             <h2 class="secListData_date secListData_date-sat">04/20<span class="week">(sat)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -74,7 +74,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240421" class="secListData">
+        <section id="anc2024-04-21" class="secListData">
             <h2 class="secListData_date secListData_date-holiday">04/21<span class="week">(sun)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -82,7 +82,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240422" class="secListData">
+        <section id="anc2024-04-22" class="secListData">
             <h2 class="secListData_date">04/22<span class="week">(mon)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -90,7 +90,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240423" class="secListData">
+        <section id="anc2024-04-23" class="secListData">
             <h2 class="secListData_date">04/23<span class="week">(tue)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -98,7 +98,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240424" class="secListData">
+        <section id="anc2024-04-24" class="secListData">
             <h2 class="secListData_date">04/24<span class="week">(wed)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -106,7 +106,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240425" class="secListData">
+        <section id="anc2024-04-25" class="secListData">
             <h2 class="secListData_date">04/25<span class="week">(thu)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -114,7 +114,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240426" class="secListData">
+        <section id="anc2024-04-26" class="secListData">
             <h2 class="secListData_date">04/26<span class="week">(fri)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -122,7 +122,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240427" class="secListData">
+        <section id="anc2024-04-27" class="secListData">
             <h2 class="secListData_date secListData_date-sat">04/27<span class="week">(sat)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -130,7 +130,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240428" class="secListData">
+        <section id="anc2024-04-28" class="secListData">
             <h2 class="secListData_date secListData_date-holiday">04/28<span class="week">(sun)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -138,7 +138,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240429" class="secListData">
+        <section id="anc2024-04-29" class="secListData">
             <h2 class="secListData_date secListData_date-holiday">04/29<span class="week">(mon)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -146,7 +146,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240430" class="secListData">
+        <section id="anc2024-04-30" class="secListData">
             <h2 class="secListData_date">04/30<span class="week">(tue)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -154,7 +154,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240501" class="secListData">
+        <section id="anc2024-05-01" class="secListData">
             <h2 class="secListData_date">05/01<span class="week">(wed)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -162,7 +162,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240502" class="secListData">
+        <section id="anc2024-05-02" class="secListData">
             <h2 class="secListData_date">05/02<span class="week">(thu)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -170,7 +170,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240503" class="secListData">
+        <section id="anc2024-05-03" class="secListData">
             <h2 class="secListData_date secListData_date-holiday">05/03<span class="week">(fri)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -178,7 +178,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240504" class="secListData">
+        <section id="anc2024-05-04" class="secListData">
             <h2 class="secListData_date secListData_date-holiday">05/04<span class="week">(sat)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -186,7 +186,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240505" class="secListData">
+        <section id="anc2024-05-05" class="secListData">
             <h2 class="secListData_date secListData_date-holiday">05/05<span class="week">(sun)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -194,7 +194,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240506" class="secListData">
+        <section id="anc2024-05-06" class="secListData">
             <h2 class="secListData_date secListData_date-holiday">05/06<span class="week">(mon)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -202,7 +202,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240507" class="secListData">
+        <section id="anc2024-05-07" class="secListData">
             <h2 class="secListData_date">05/07<span class="week">(tue)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -210,7 +210,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240508" class="secListData">
+        <section id="anc2024-05-08" class="secListData">
             <h2 class="secListData_date">05/08<span class="week">(wed)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -218,7 +218,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240509" class="secListData">
+        <section id="anc2024-05-09" class="secListData">
             <h2 class="secListData_date">05/09<span class="week">(thu)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -226,7 +226,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240510" class="secListData">
+        <section id="anc2024-05-10" class="secListData">
             <h2 class="secListData_date">05/10<span class="week">(fri)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -234,7 +234,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240511" class="secListData">
+        <section id="anc2024-05-11" class="secListData">
             <h2 class="secListData_date secListData_date-sat">05/11<span class="week">(sat)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -242,7 +242,7 @@
                 {{ end }}
             </ul>
         </section>
-        <section id="anc20240512" class="secListData">
+        <section id="anc2024-05-12" class="secListData">
             <h2 class="secListData_date secListData_date-holiday">05/12<span class="week">(sun)</span></h2>
             <ul class="secListData_list listMember">
                 {{ range .haveto }}
@@ -252,5 +252,6 @@
         </section>
     </div>
 </main>
+<script src="/js/scripts.js"></script>
 </body>
 </html>

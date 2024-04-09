@@ -14,6 +14,7 @@ func main() {
     router := gin.Default()
     router.LoadHTMLGlob("templates/*")
 	router.Static("/css", "./css")
+	router.Static("/js", "./js")
     router.GET("/", func(c *gin.Context) {
         c.HTML(200, "index.html", gin.H{
             "haveto": []string{"Michael", "Dwight", "Jim", "Pam", "Angela", "Oscar", "Kevin"},
@@ -30,7 +31,7 @@ func main() {
     })
     router.GET("/list_have_to.html", func(c *gin.Context) {
         c.HTML(200, "list_have_to.html", gin.H{
-            "haveto":    []string{"Stanley", "Phyllis", "Andy", "Robert", "Ryan", "Kelly", "Toby"},
+            "haveto": []string{"Michael", "Dwight", "Jim", "Pam", "Angela", "Oscar", "Kevin"},
         })
     })
     router.Run(":8040")
