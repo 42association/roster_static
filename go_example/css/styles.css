@@ -236,7 +236,7 @@ a {
 ----- */
 .mainHeader-index {
   position: relative;
-  height: 160px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -288,7 +288,7 @@ a {
   width: calc(100% - 60px);
   max-width: var(--widthContMax);
   margin: 0 auto 30px;
-  padding: 12px 20px 20px;
+  padding: 12px 20px 12px;
   background-color: var(--bg-color2-alpha);
   border: 1px solid var(--content-color1);
   border-radius: 3px;
@@ -304,6 +304,10 @@ a {
 .secListMember .listMember {
   justify-content: center;
   font-size: 2.4rem;
+}
+
+.navDateSelector-index {
+  text-align: center;
 }
 
 /* -----
