@@ -17,6 +17,7 @@ ul, ol {
   --color-white: #FFFFFF;
   --heightNavGlobalSp: 84px;
   --heightHeaderList: 140px;
+  --widthContMax: 900px;
 
   font-size: 62.5%; /* 1rem = 10px */
   font-family: "futura-pt", sans-serif;
@@ -55,6 +56,7 @@ a {
   bottom: 0;
   left: 0;
   width: calc(100% - 60px);
+  max-width: var(--widthContMax);
   height: 0;
   margin: auto;
 }
@@ -130,12 +132,14 @@ a {
 
 /* navDateSelector */
 .navDateSelector {
-  margin: 0 20px;
+  max-width: var(--widthContMax);
+  margin: 0 auto;
   text-align: right;
   color: var(--color-white);
 }
 
-.formCalendar {
+.formCalendar input {
+  width: 9em
 }
 
 /* -----
@@ -214,6 +218,7 @@ a {
 /* secListMember */
 .secListMember {
   width: calc(100% - 60px);
+  max-width: var(--widthContMax);
   margin: 0 auto 30px;
   padding: 12px 20px 20px;
   background-color: var(--bg-color2-alpha);
@@ -249,6 +254,8 @@ a {
 }
 
 .wrapListData {
+  max-width: var(--widthContMax);
+  margin: 0 auto;
   height: calc(100vh - var(--heightHeaderList) - var(--heightNavGlobalSp));
   overflow-y: scroll;
 }
