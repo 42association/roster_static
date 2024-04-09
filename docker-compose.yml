@@ -8,3 +8,4 @@ services:
       - ./go_example/templates:/root/templates
       - ./go_example/css:/root/css
       - ./go_example/js:/root/js
+      - ./go_example/fonts:/root/fonts

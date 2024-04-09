@@ -15,6 +15,7 @@ func main() {
     router.LoadHTMLGlob("templates/*")
 	router.Static("/css", "./css")
 	router.Static("/js", "./js")
+	router.Static("/fonts", "./fonts")
     router.GET("/", func(c *gin.Context) {
         c.HTML(200, "index.html", gin.H{
             "haveto": []string{"Michael", "Dwight", "Jim", "Pam", "Angela", "Oscar", "Kevin"},

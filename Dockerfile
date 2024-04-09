@@ -27,6 +27,7 @@ COPY --from=builder /app/main .
 COPY go_example/templates ./templates
 COPY go_example/css ./css
 COPY go_example/js ./js
+COPY go_example/fonts ./fonts
 
 # ポート8040を開放
 EXPOSE 8040
